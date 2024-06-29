@@ -1,0 +1,26 @@
+[project]
+name = "inyaml"
+version = "0.0.1"
+authors = [
+  { name = "Caewinix", email = "Caewinix@yeah.net" },
+]
+dependencies = [
+  "lark>=0.6.0",
+  "PyYAML>=3.13"
+]
+description = "A library based on `PyYAML` that promises to parse YAML documents and produce Python objects, for executing Python code within YAML documents and instantiating Python objects based on YAML arguments."
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project.urls]
+"Homepage" = "https://github.com/Caewinix/inyaml"
+"Bug Tracker" = "https://github.com/Caewinix/inyaml/issues"
