@@ -13,10 +13,12 @@ The library based on `PyYAML` promises to parse YAML documents and produce Pytho
   - Executes Python codes or expressions within YAML.
   - Manages import (`__import__` as the default key) and run (`__run__` as the default key) executions through special YAML keys.
   - Ensures that only designated code is executed to maintain safety.
+
 **`InstantiableConstructor`**:
   - Inherits from `ExecutableConstructor`.
   - Adds the capability to instantiate objects using type specifications provided in YAML tags.
   - Supports advanced features like namespace and argument passing for constructors.
+
 **`load` Function**:
   - Parses YAML documents and uses either `ExecutableConstructor` or `InstantiableConstructor` based on whether `is_instantiable` is `True`.
   - All imported modules or classes will be stores in the imported targets attribute (`__import__` as the default identifier) of the outermost `Namespace`.
