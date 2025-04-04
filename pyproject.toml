@@ -1,12 +1,13 @@
 [project]
 name = "inyaml"
-version = "0.0.1"
+version = "0.0.1-beta.10"
 authors = [
   { name = "Caewinix", email = "Caewinix@yeah.net" },
 ]
 dependencies = [
   "lark>=0.6.0",
-  "PyYAML>=3.13"
+  "PyYAML>=3.13",
+  "restrictedpython>=7.2"
 ]
 description = "A library based on `PyYAML` that promises to parse YAML documents and produce Python objects, for executing Python code within YAML documents and instantiating Python objects based on YAML arguments."
 readme = "README.md"
